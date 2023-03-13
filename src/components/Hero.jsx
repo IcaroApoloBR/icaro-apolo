@@ -10,7 +10,7 @@ const Hero = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Ícaro", "Web Developer", "Front-End"],
+      strings: ["Apolo", "Web Developer", "Front-End"],
       startDelay: 300,
       typeSpeed: 150,
       backDelay: 150,
@@ -28,12 +28,12 @@ const Hero = () => {
     <section className="relative w-full h-screen mx-auto">
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
         <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#915eff]" />
-          <div className="w-1 h-40 sm:h-80 violet-gradient" />
+          <div className="w-5 h-5 rounded-full blue-gradient" />
+          <div className="w-1 h-40 sm:h-80 blue-gradient" />
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}> Hi, i'm <span className="text-[#915eff]" ref={el}></span></h1>
+          <h1 className={`${styles.heroHeadText} text-white`}> Hi, i'm <span className="blue-text-gradient" ref={el}></span></h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>I develop websites, <br className="sm:block hidden" />user interfaces and web applications.</p>
         </div>
       </div>
