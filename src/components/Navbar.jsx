@@ -11,7 +11,7 @@ const Navbar = () => {
   const [navColor, setNavColor] = useState("transparent")
 
   const listenScrollEvent = () => {
-    window.scrollY > 10 ? setNavColor("bg-primary shadow-md shadow-black") : setNavColor("transparent");
+    window.scrollY > 10 ? setNavColor("bg-primary shadow-md shadow-black duration-700") : setNavColor("transparent");
   }
 
   useEffect(() => {
