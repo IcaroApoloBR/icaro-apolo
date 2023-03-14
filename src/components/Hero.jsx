@@ -10,7 +10,7 @@ const Hero = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Apolo", "Web Developer", "Front-End"],
+      strings: ["Ícaro Apolo", "Web Developer", "Front-End"],
       startDelay: 300,
       typeSpeed: 150,
       backDelay: 150,
@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}> Hi, i'm <span className="blue-text-gradient" ref={el}></span></h1>
+          <h1 className={`${styles.heroHeadText} text-white`}>I'm <span className="blue-text-gradient" ref={el}></span></h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>I develop websites, <br className="sm:block hidden" />user interfaces and web applications.</p>
         </div>
       </div>
