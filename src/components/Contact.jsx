@@ -7,6 +7,7 @@ import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from './Footer';
 
 const Contact = () => {
   const formRef = useRef();
@@ -105,7 +106,10 @@ const Contact = () => {
         <motion.div variants={slideIn('right', "tween", 0.2, 1)} className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
           <EarthCanvas />
         </motion.div>
+
       </div>
+
+      <Footer />
     </>
   )
 }

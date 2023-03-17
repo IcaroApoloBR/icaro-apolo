@@ -266,4 +266,19 @@ const projects = [
     },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const socials = [
+    {
+        name: 'linkedin',
+        url: '/src/assets/linkedin.svg',
+    },
+    {
+        name: 'instagram',
+        url: '/src/assets/instagram.svg',
+    },
+    {
+        name: 'whatsapp',
+        url: '/src/assets/whatsapp.svg',
+    },
+];
+
+export { services, technologies, experiences, testimonials, projects, socials };
