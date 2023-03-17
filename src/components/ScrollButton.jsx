@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { ArrowFatLinesUp } from "@phosphor-icons/react";
+import { ArrowSquareUp } from "@phosphor-icons/react";
 
 const ScrollButton = () => {
     const [showButton, setShowButton] = useState(false);
@@ -22,8 +22,8 @@ const ScrollButton = () => {
     return (
         <div>
             {showButton && (
-                <button className="fixed bottom-5 right-7 z-50 cursor-pointer p-4 hover:text-[#2f80ed] transition-colors" onClick={handleScrollToTop}>
-                    <ArrowFatLinesUp size={40} />
+                <button className="fixed bottom-5 right-7 z-50 cursor-pointer p-4 hover:animate-bounce" onClick={handleScrollToTop}>
+                    <ArrowSquareUp size={40} color="#303d9c" weight="duotone" />
                 </button>
             )}
         </div>
