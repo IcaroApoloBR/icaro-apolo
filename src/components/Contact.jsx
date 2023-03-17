@@ -6,8 +6,6 @@ import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 
-import React from 'react'
-
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -18,11 +16,41 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
+    const { name, value } = e.target;
 
+    setForm({ ...form, [name]: value });
   }
 
   const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
 
+    emailjs.send(
+      'service_aa65t9p',
+      'template_y9vb19d',
+      {
+        from_name: form.name,
+        to_name: 'Icaro Apolo',
+        from_email: form.email,
+        to_email: 'apoloraci@gmail.com',
+        message: form.message,
+      },
+      'lPfD3_NPGG7BFlj6U'
+    )
+      .then(() => {
+        setLoading(false);
+        alert('Enviou');
+
+        setForm({
+          name: '',
+          email: '',
+          message: '',
+        })
+      }, (error) => {
+        setLoading(false);
+        console.log(error);
+        alert('Houve algum erro')
+      })
   }
 
   return (
@@ -54,7 +82,7 @@ const Contact = () => {
           </label>
 
           <button type="submit" className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl">
-            {loading ? "Enviando" : "Enviar"}
+            {loading ? "Enviando..." : "Enviar"}
           </button>
         </form>
       </motion.div>
