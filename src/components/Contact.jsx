@@ -5,9 +5,9 @@ import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import Footer from './Footer';
+import { LoadingSpinner } from './LoadingSpinner';
+import { Report } from 'notiflix/build/notiflix-report-aio';
 
 const Contact = () => {
   const formRef = useRef();
@@ -42,7 +42,11 @@ const Contact = () => {
     )
       .then(() => {
         setLoading(false);
-        toast.success(`Mensagem enviada com sucesso! 🚀`);
+        Report.success(
+          'Mensagem enviada com sucesso!',
+          'Obrigado pelo seu contato, em breve retornarei ao seu chamado.',
+          'OK',
+        );
         setForm({
           name: '',
           email: '',
@@ -51,25 +55,16 @@ const Contact = () => {
       }, (error) => {
         setLoading(false);
         console.log(error);
-        toast.error('Houve algum erro, tente novamente! 😫');
+        Report.failure(
+          'Ops, Não foi possível enviar o e-mail.',
+          'Houve algum erro, tente novamente mais tarde e desculpe o transtorno.',
+          'OK',
+        );
       })
   }
 
   return (
     <>
-      <ToastContainer
-        position="bottom-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="colored"
-      />
-
       <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
         <motion.div variants={slideIn('left', "tween", 0.2, 1)} className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
           <p className={styles.sectionSubText}>Entrar em contato</p>
@@ -77,29 +72,30 @@ const Contact = () => {
 
           <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
             <label htmlFor="name" className="flex flex-col">
-              <span className="text-white font-medium mb-4">Seu nome</span>
-              <input type="text" name="name" value={form.name} onChange={handleChange} placeholder="Lorem Ipsum"
+              <span className="text-white font-medium mb-4">Nome</span>
+              <input type="text" name="name" value={form.name} onChange={handleChange} placeholder="Digite seu nome e sobrenome" required
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
               />
             </label>
 
             <label htmlFor="email" className="flex flex-col">
-              <span className="text-white font-medium mb-4">Seu e-mail</span>
-              <input type="email" name="email" value={form.email} onChange={handleChange} placeholder="Lorem Ipsum"
+              <span className="text-white font-medium mb-4">E-mail</span>
+              <input type="email" name="email" value={form.email} onChange={handleChange} placeholder="seu@email.com.br" required
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
               />
             </label>
 
             <label htmlFor="message" className="flex flex-col">
-              <span className="text-white font-medium mb-4">Sua mensagem</span>
-              <textarea rows="7" type="text" name="message" value={form.message} onChange={handleChange} placeholder="Lorem Ipsum"
+              <span className="text-white font-medium mb-4">Mensagem</span>
+              <textarea rows="7" type="text" name="message" value={form.message} onChange={handleChange} placeholder="Motivo do contato" required
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
               />
             </label>
 
-            <button type="submit" className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl">
-              {loading ? "Enviando..." : "Enviar"}
+            <button type="submit" className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl relative">
+              {loading ? <LoadingSpinner /> : "Enviar"}
             </button>
+
           </form>
         </motion.div>
 
