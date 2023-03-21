@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-
 import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
@@ -25,9 +24,9 @@ const Navbar = () => {
     <nav className={`${styles.paddingX, navColor} w-full flex items-center justify-center py-5 fixed top-0 z-20`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-5">
         <Link to="/" className="flex items-center gap-2" onClick={() => { setActive(""); window.scrollTo(0, 0); }}>
-          <img src={logo} alt="Logo Portfolio" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">Apolo &nbsp;
-            <span className="sm:block hidden">| Front-end Developer</span>
+          {/* <img src={logo} alt="Logo Portfolio" className="w-9 h-9 object-contain" /> */}
+          <p className="text-white text-[18px] font-bold cursor-pointer flex">Ícaro Apolo &nbsp;
+            <span className="sm:block hidden">| Desenvolvedor Web</span>
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">

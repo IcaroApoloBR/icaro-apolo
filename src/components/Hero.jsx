@@ -4,13 +4,14 @@ import { useEffect, useRef } from 'react';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
 import Typed from 'typed.js'
+import { FileArrowDown } from '@phosphor-icons/react';
 
 const Hero = () => {
   const el = useRef(null);
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Ícaro Apolo", "Web Developer", "Front-End"],
+      strings: ["Ícaro Apolo", "Desenvolvedor Web", "Front-End"],
       startDelay: 300,
       typeSpeed: 150,
       backDelay: 150,
@@ -26,15 +27,10 @@ const Hero = () => {
 
   return (
     <section className="relative w-full h-screen mx-auto">
-      <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
-        {/* <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full blue-gradient" />
-          <div className="w-1 h-40 sm:h-80 blue-gradient" />
-        </div> */}
-
+      <div className={`${styles.paddingX} absolute inset-0 top-[80px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>I'm <span className="blue-text-gradient" ref={el}></span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>I develop websites, <br className="sm:block hidden" />user interfaces and web applications.</p>
+          <h1 className={`${styles.heroHeadText} text-white`}>Prazer, sou <span className="green-pink-text-gradient" ref={el}></span></h1>
+          <p className={`${styles.heroSubText} mt-2 mb-10 text-white-100`}>Meu nome é Ícaro Apolo, sou Engenheiro de Software e atualmente trabalho com desenvolvimento Web. <br className="sm:block hidden" />Crio soluções digitais personalizáveis para atender necessidades de clientes, sejam elas, sistemas complexos, interfaces de usuários e sites no geral.</p>
         </div>
       </div>
 

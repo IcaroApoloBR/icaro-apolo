@@ -23,7 +23,7 @@ const ScrollButton = () => {
         <div>
             {showButton && (
                 <button className="fixed bottom-5 right-7 z-50 cursor-pointer p-4 hover:animate-bounce" onClick={handleScrollToTop}>
-                    <ArrowSquareUp size={40} color="#303d9c" weight="duotone" />
+                    <ArrowSquareUp size={40} color="#bf61ff" weight="duotone" />
                 </button>
             )}
         </div>
