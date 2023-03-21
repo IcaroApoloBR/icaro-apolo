@@ -1,8 +1,8 @@
 import {
-    mobile,
-    backend,
-    creator,
     web,
+    mobile,
+    creator,
+    uiux,
     javascript,
     typescript,
     html,
@@ -15,10 +15,8 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+    next,
+    prefeitura,
     carrent,
     jobit,
     tripguide,
@@ -28,38 +26,38 @@ import {
 export const navLinks = [
     {
         id: "about",
-        title: "About",
+        title: "Sobre",
     },
     {
         id: "work",
-        title: "Work",
+        title: "Carreira",
     },
     {
         id: "projects",
-        title: "Projects",
+        title: "Projetos",
     },
     {
         id: "contact",
-        title: "Contact",
+        title: "Contato",
     },
 ];
 
 const services = [
     {
-        title: "Web Developer",
+        title: "Desenvolvimento Web",
         icon: web,
     },
     {
-        title: "React Native Developer",
-        icon: mobile,
-    },
-    {
-        title: "Backend Developer",
-        icon: backend,
-    },
-    {
-        title: "Content Creator",
+        title: "Criação de Interfaces",
         icon: creator,
+    },
+    {
+        title: "Consumo de APIs",
+        icon: uiux,
+    },
+    {
+        title: "Desenvolvimento Mobile",
+        icon: mobile,
     },
 ];
 
@@ -120,107 +118,60 @@ const technologies = [
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        title: "Estagiário de Tecnologia da Informação",
+        company_name: "Prefeitura Municipal de Cruzeiro",
+        icon: prefeitura,
+        iconBg: "#FFF",
+        date: "Julho de 2021 - Dezembro de 2021",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Conduzir a manutenção e organização de arquivos.",
+            "Analisar e implementar roteiros de testes.",
+            "Alterar login de rede intranet para usuários da corporação.",
+            "Auxiliar na configuração de hardware em rede local.",
+            "Acompanhar manutenção de sites e sistemas.",
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Desenvolvedor Front-End",
+        company_name: "Next Tecnologia da Informação",
+        icon: next,
         iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        date: "Março de 2022 - o momento",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Desenvolvimento de interfaces de usuário com o Framework Next.js(React | JavaScript).",
+            "Criação de sistema de autenticação de usuários para consumir conteúdos exclusivos com Laravel e Blade.",
+            "Desenvolvimento de um ERP integrado ao Mercado Livre, gerando métricas de lucratividade e controle de estoque, implementação de gateway de pagamento",
+            "Manutenção de aplicativo E-reader para distribuição de licenças digitais e leitura personalizável.",
+            "Desenvolvimento e manutenção de um sistema pedagógico que realiza o controle de aulas para instituição de aulas particulares.",
+            "Construção de um e-commerce com Woocommerce no ramo de agronegócios para soluções de melhores cultivos.",
+            "Metodologia ágil Scrum e Kanban.",
+            "Calls de alinhamento com clientes para apresentar demandas desenvolvidas e alinhar próximos passos da sprint e do backlog.",
+            "Utilização de ferramentas Trello, Jira e Notion para realizar o controle de projetos.",
         ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-];
-
-const testimonials = [
-    {
-        testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-        testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-        testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
 ];
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Rocket Help",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Aplicativo de chamados internos de uma empresa, solicitações de manutenção e suporte de equipamentos, gerência de chamados em tempo real.",
         tags: [
             {
-                name: "react",
+                name: "react-native",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "typescript",
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "firebase",
                 color: "pink-text-gradient",
             },
         ],
         image: carrent,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/IcaroApoloBR/RocketHelp",
     },
     {
         name: "Job IT",
@@ -281,4 +232,4 @@ const socials = [
     },
 ];
 
-export { services, technologies, experiences, testimonials, projects, socials };
+export { services, technologies, experiences, projects, socials };
