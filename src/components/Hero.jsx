@@ -4,7 +4,6 @@ import { useEffect, useRef } from 'react';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
 import Typed from 'typed.js'
-import { FileArrowDown } from '@phosphor-icons/react';
 
 const Hero = () => {
   const el = useRef(null);
@@ -30,7 +29,7 @@ const Hero = () => {
       <div className={`${styles.paddingX} absolute inset-0 top-[80px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>Prazer, sou <span className="green-pink-text-gradient" ref={el}></span></h1>
-          <p className={`${styles.heroSubText} mt-2 mb-10 text-white-100`}>Meu nome é Ícaro Apolo, sou Engenheiro de Software e atualmente trabalho com desenvolvimento Web. <br className="sm:block hidden" />Crio soluções digitais personalizáveis para atender necessidades de clientes, sejam elas, sistemas complexos, interfaces de usuários e sites no geral.</p>
+          <p className={`${styles.heroSubText} mt-2 mb-10 text-secondary`}>Meu nome é <b>Ícaro Apolo,</b> sou <b>Engenheiro de Software</b> e atualmente trabalho com <b>desenvolvimento Web.</b> <br className="sm:block hidden" />Crio <b>soluções digitais personalizáveis</b> para atender <b>necessidades de clientes,</b> sejam elas, <b>sistemas complexos, interfaces de usuários</b> e <b>sites</b> no geral.</p>
         </div>
       </div>
 
@@ -43,7 +42,7 @@ const Hero = () => {
           </div>
         </a>
       </div>
-    </section>
+    </section >
   )
 }
 

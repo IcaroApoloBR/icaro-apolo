@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { ArrowSquareUp } from "@phosphor-icons/react";
+import { Icon } from '@iconify/react';
 
 const ScrollButton = () => {
     const [showButton, setShowButton] = useState(false);
@@ -23,7 +23,7 @@ const ScrollButton = () => {
         <div>
             {showButton && (
                 <button className="fixed bottom-5 right-7 z-50 cursor-pointer p-4 hover:animate-bounce" onClick={handleScrollToTop}>
-                    <ArrowSquareUp size={40} color="#bf61ff" weight="duotone" />
+                    <Icon icon="mdi:arrow-up-bold-circle" color="#bf61ff" width="40" height="40" />
                 </button>
             )}
         </div>

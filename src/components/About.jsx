@@ -1,12 +1,11 @@
 import React from 'react'
 import Tilt from 'react-tilt';
 import { motion } from 'framer-motion';
-
 import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant, slideIn } from '../utils/motion';
 import { SectionWrapper } from '../hoc'
-import { FileArrowDown } from '@phosphor-icons/react';
+import { Icon } from '@iconify/react';
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -33,18 +32,19 @@ const About = () => {
         <motion.div>
 
           <motion.p variants={fadeIn("", "", 0.1, 1)} className=" text-secondary text-[17px] max-w-3xl leading-[30px]">
-            Atualmente atuo como Desenvolvedor Front-End para uma empresa de tecnologia em minha cidade, sou responsável pela criação de websites e sistemas, trabalho com desenvolvimento de interfaces com a biblioteca React/Next.js, construção de aplicativos com React Native, consumo de dados via API para integrar aplicações e possuo contato direto com clientes em reviews por adotarmos a metodologia Scrum.
-            Também possuo conhecimentos em HTML, CSS, SASS, Styled Components, Bootstrap, Tailwind, Vite.js, Express, Laravel, MySQL, Firebase, Git e GitHub.
+            Atualmente atuo como <b>desenvolvedor Front-End</b> para uma empresa de tecnologia, sou responsável pela <b>criação de websites e sistemas</b>, trabalho com <b>desenvolvimento de interfaces</b> com a biblioteca <b>React/Next.js</b>, construção de <b>aplicativos com React Native</b>, consumo de dados via API para <b>integrar aplicações</b> e possuo contato direto com clientes em reviews por adotarmos a <b>metodologia Scrum.</b>
+            Também possuo conhecimentos em <b>HTML, CSS, SASS, Styled Components, Bootstrap, Tailwind, Vite.js, Express, Laravel, MySQL, Firebase, Git e GitHub.</b>
+            <span className="flex items-center gap-1 w-full xs:flex-wrap"><Icon icon="logos:html-5" width="32" height="32" /><Icon icon="logos:css-3" width="32" height="32" /><Icon icon="logos:javascript" width="32" height="32" /><Icon icon="logos:react" width="32" height="32" /><Icon icon="logos:nextjs-icon" width="32" height="32" /><Icon icon="logos:vitejs" width="32" height="32" /><Icon icon="logos:tailwindcss-icon" width="32" height="32" /><Icon icon="logos:sass" width="32" height="32" /><Icon icon="logos:bootstrap" width="32" height="32" /><Icon icon="logos:laravel" width="32" height="32" /><Icon icon="logos:mysql" width="32" height="32" /><Icon icon="logos:firebase" width="32" height="32" /><Icon icon="logos:git-icon" width="32" height="32" /><Icon icon="logos:github-icon" width="32" height="32" /></span>
             <br />
             <br />
-            Durante a universidade, participei de diversas maratonas de programação e nelas me identifiquei, conheci a grandeza dessa área quando pude participar do evento Bluehack 2018 e IBM Cloud Discovery, voltado ao desenvolvimento de soluções tecnológicas para os desafios ONU/ASBRAD, Fleury e Copersucar.
+            Durante a universidade, participei de diversas <b>maratonas de programação</b> e nelas me identifiquei, conheci a grandeza dessa área quando pude participar do evento <b>Bluehack 2018 e IBM Cloud Discovery</b>, voltado ao desenvolvimento de soluções tecnológicas para os <b>desafios ONU/ASBRAD, Fleury e Copersucar.</b>
             <br />
             <br />
-            Concluí minha graduação de Engenheiro da Computação em 2021 pelo Centro Universitário Salesiano de São Paulo, período fundamental para minha carreira por proporcionar diversas experiências marcantes em eventos sociais.
+            Concluí minha graduação de <b>Engenheiro da Computação</b> em 2021 pelo <b>Centro Universitário Salesiano de São Paulo,</b> período fundamental para minha carreira por proporcionar diversas experiências marcantes em <b>eventos sociais.</b>
           </motion.p>
 
           <a href="../src/constants/cvIcaroApolo.pdf" target="_blank" className="mt-4 flex items-center gap-2 green-pink-gradient py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl cursor-pointer hover:opacity-90">
-            <FileArrowDown size={24} color="#fff" weight="duotone" />
+            <Icon icon="material-symbols:sim-card-download-outline" width="32" />
             Download CV
           </a>
         </motion.div>
