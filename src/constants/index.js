@@ -3,25 +3,32 @@ import {
     mobile,
     creator,
     uiux,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
+    // javascript,
+    // typescript,
+    // html,
+    // css,
+    // reactjs,
+    // redux,
+    // tailwind,
+    // nodejs,
+    // mongodb,
+    // git,
+    // figma,
+    // docker,
+    // threejs,
     next,
     prefeitura,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
 } from "../assets";
+
+import rockethelp from "../assets/projects/rockethelp.jpg";
+import waiterapp from "../assets/projects/waiterapp.jpg";
+import reactprime from "../assets/projects/reactprime.png";
+import letmeask from "../assets/projects/letmeask.png";
+import proffy from "../assets/projects/proffy.png";
+import podcastrnext from "../assets/projects/podcastrnext.png";
+import ignitelab from "../assets/projects/ignitelab.png";
+import apoloflix from "../assets/projects/apoloflix.png";
+import discord from "../assets/projects/discord.png";
 
 export const navLinks = [
     {
@@ -61,60 +68,60 @@ const services = [
     },
 ];
 
-const technologies = [
-    {
-        name: "HTML 5",
-        icon: html,
-    },
-    {
-        name: "CSS 3",
-        icon: css,
-    },
-    {
-        name: "JavaScript",
-        icon: javascript,
-    },
-    {
-        name: "TypeScript",
-        icon: typescript,
-    },
-    {
-        name: "React JS",
-        icon: reactjs,
-    },
-    {
-        name: "Redux Toolkit",
-        icon: redux,
-    },
-    {
-        name: "Tailwind CSS",
-        icon: tailwind,
-    },
-    {
-        name: "Node JS",
-        icon: nodejs,
-    },
-    {
-        name: "MongoDB",
-        icon: mongodb,
-    },
-    {
-        name: "Three JS",
-        icon: threejs,
-    },
-    {
-        name: "git",
-        icon: git,
-    },
-    {
-        name: "figma",
-        icon: figma,
-    },
-    {
-        name: "docker",
-        icon: docker,
-    },
-];
+// const technologies = [
+//     {
+//         name: "HTML 5",
+//         icon: html,
+//     },
+//     {
+//         name: "CSS 3",
+//         icon: css,
+//     },
+//     {
+//         name: "JavaScript",
+//         icon: javascript,
+//     },
+//     {
+//         name: "TypeScript",
+//         icon: typescript,
+//     },
+//     {
+//         name: "React JS",
+//         icon: reactjs,
+//     },
+//     {
+//         name: "Redux Toolkit",
+//         icon: redux,
+//     },
+//     {
+//         name: "Tailwind CSS",
+//         icon: tailwind,
+//     },
+//     {
+//         name: "Node JS",
+//         icon: nodejs,
+//     },
+//     {
+//         name: "MongoDB",
+//         icon: mongodb,
+//     },
+//     {
+//         name: "Three JS",
+//         icon: threejs,
+//     },
+//     {
+//         name: "git",
+//         icon: git,
+//     },
+//     {
+//         name: "figma",
+//         icon: figma,
+//     },
+//     {
+//         name: "docker",
+//         icon: docker,
+//     },
+// ];
 
 const experiences = [
     {
@@ -153,6 +160,27 @@ const experiences = [
 
 const projects = [
     {
+        name: "Ignite Lab React",
+        description:
+            "O projeto consiste em um clone da plataforma de eventos da Rocketseat, integração com CMS e APIs GraphQL.",
+        tags: [
+            {
+                name: "typescript",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "tailwind",
+                color: "green-text-gradient",
+            },
+            {
+                name: "graphql",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: ignitelab,
+        source_code_link: "https://github.com/IcaroApoloBR/igniteLabReact",
+    },
+    {
         name: "Rocket Help",
         description:
             "Aplicativo de chamados internos de uma empresa, solicitações de manutenção e suporte de equipamentos, gerência de chamados em tempo real.",
@@ -170,37 +198,138 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
+        image: rockethelp,
         source_code_link: "https://github.com/IcaroApoloBR/RocketHelp",
     },
     {
-        name: "Job IT",
+        name: "PodcastNext",
+        description:
+            "Uma plataforma construída para transmissão de podcast do âmbito de programação e desenvolvimento web.",
+        tags: [
+            {
+                name: "typescript",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "next",
+                color: "green-text-gradient",
+            },
+            {
+                name: "sass",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: podcastrnext,
+        source_code_link: "https://github.com/IcaroApoloBR/podcastrnext",
+    },
+    {
+        name: "Waiter App",
         description:
             "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        tags: [
+            {
+                name: "typescript",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "node",
+                color: "green-text-gradient",
+            },
+            {
+                name: "styled-components",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: waiterapp,
+        source_code_link: "https://github.com/IcaroApoloBR/WaiterApp_FullStack",
+    },
+    {
+        name: "React Prime",
+        description:
+            "Um aplicativo onde você pode pesquisar filmes que estão em exibição, em alta ou com melhor classificação, descrição do filme, link do filme para assistir ao trailer e salvá-los em seus favoritos.",
+        tags: [
+            {
+                name: "react-native",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "expo",
+                color: "green-text-gradient",
+            },
+            {
+                name: "axios",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: reactprime,
+        source_code_link: "https://github.com/IcaroApoloBR/MoviesApp_ReactNative",
+    },
+    {
+        name: "Proffy",
+        description:
+            "A plataforma que conecta professores e alunos para uma melhor experiência de estudo online.",
+        tags: [
+            {
+                name: "typescript",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "node",
+                color: "green-text-gradient",
+            },
+            {
+                name: "react-native",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: proffy,
+        source_code_link: "https://github.com/IcaroApoloBR/Proffy",
+    },
+    {
+        name: "LetMeAsk",
+        description:
+            "Central de Perguntas idealizado para responder perguntas de alunos em tempo real, elaborado para professores interagirem com estudantes, gerar conteúdo pré-live ou reuniões e reunir dúvidas durante as aulas.",
+        tags: [
+            {
+                name: "typescript",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "firebase",
+                color: "green-text-gradient",
+            },
+            {
+                name: "sass",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: letmeask,
+        source_code_link: "https://github.com/IcaroApoloBR/LetmeaskEStudos",
+    },
+    {
+        name: "Apoloflix",
+        description:
+            "Projeto clone da netflix desenvolvido em react, cadastro de categorias e exibição por tópicos.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "styled-components",
                 color: "green-text-gradient",
             },
-            {
-                name: "scss",
-                color: "pink-text-gradient",
-            },
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: apoloflix,
+        source_code_link: "https://github.com/IcaroApoloBR/ApoloFlix",
     },
     {
-        name: "Trip Guide",
+        name: "Discord",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "Projeto baseado no funcionamento de um chat em tempo real, utilizando como referência a interface gráfica e funcionalidades do Discord.",
         tags: [
             {
-                name: "nextjs",
+                name: "next",
                 color: "blue-text-gradient",
             },
             {
@@ -208,12 +337,12 @@ const projects = [
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "skynexui",
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: discord,
+        source_code_link: "https://github.com/IcaroApoloBR/discordProject",
     },
 ];
 
@@ -232,4 +361,4 @@ const socials = [
     },
 ];
 
-export { services, technologies, experiences, projects, socials };
+export { services, experiences, projects, socials };
