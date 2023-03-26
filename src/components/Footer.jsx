@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 import { socials } from '../constants';
-import { footerVariants } from '../utils/motion';
+import { slideVertical } from '../utils/motion';
 
 const Footer = () => {
     return (
         <motion.footer
-            variants={footerVariants}
+            variants={slideVertical}
             initial="hidden"
             whileInView="show"
             className="mt-4"
@@ -18,17 +18,21 @@ const Footer = () => {
                     <p className="font-normal text-[14px] text-white opacity-50">Copyright 2023 - Todos os direitos reservados.</p>
                     <div className="flex gap-4">
                         {socials.map((social) => (
-                            <img
-                                key={social.name}
-                                alt={social.name}
-                                src={social.url}
-                                className="w-[32px] h-[32px] object-contain cursor-pointer hover:animate-pulse "
-                            />
+                            <>
+                                <a href={social.href} target="_blank" className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
+                                    <img
+                                        key={social.name}
+                                        alt={social.name}
+                                        src={social.url}
+                                        className="object-contain hover:animate-pulse"
+                                    />
+                                </a>
+                            </>
                         ))}
                     </div>
                 </div>
             </div>
-        </motion.footer>
+        </motion.footer >
     )
 }
 
