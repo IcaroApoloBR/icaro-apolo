@@ -24,6 +24,10 @@ import close from "./close.svg";
 import next from "./company/next.png";
 import prefeitura from "./company/prefeitura.png";
 
+import linkedin from "./socials/linkedin.svg";
+import instagram from "./socials/instagram.svg";
+import whatsapp from "./socials/whatsapp.svg";
+
 export {
   logo,
   uiux,
@@ -48,4 +52,7 @@ export {
   // threejs,
   next,
   prefeitura,
+  linkedin,
+  instagram,
+  whatsapp
 };

@@ -30,6 +30,10 @@ import ignitelab from "../assets/projects/ignitelab.png";
 import apoloflix from "../assets/projects/apoloflix.png";
 import discord from "../assets/projects/discord.png";
 
+import linkedin from "../assets/socials/linkedin.svg";
+import instagram from "../assets/socials/instagram.svg";
+import whatsapp from "../assets/socials/whatsapp.svg";
+
 export const navLinks = [
     {
         id: "about",
@@ -174,7 +178,7 @@ const projects = [
             },
             {
                 name: "graphql",
-                color: "pink-text-gradient",
+                color: "green-pink-text-gradient",
             },
         ],
         image: ignitelab,
@@ -187,7 +191,7 @@ const projects = [
         tags: [
             {
                 name: "react-native",
-                color: "blue-text-gradient",
+                color: "green-pink-text-gradient",
             },
             {
                 name: "typescript",
@@ -195,7 +199,7 @@ const projects = [
             },
             {
                 name: "firebase",
-                color: "pink-text-gradient",
+                color: "orange-text-gradient",
             },
         ],
         image: rockethelp,
@@ -279,7 +283,7 @@ const projects = [
             },
             {
                 name: "react-native",
-                color: "pink-text-gradient",
+                color: "green-pink-text-gradient",
             },
         ],
         image: proffy,
@@ -296,7 +300,7 @@ const projects = [
             },
             {
                 name: "firebase",
-                color: "green-text-gradient",
+                color: "orange-text-gradient",
             },
             {
                 name: "sass",
@@ -349,15 +353,15 @@ const projects = [
 const socials = [
     {
         name: 'linkedin',
-        url: '../src/assets/linkedin.svg',
+        url: linkedin,
     },
     {
         name: 'instagram',
-        url: '../src/assets/instagram.svg',
+        url: instagram,
     },
     {
         name: 'whatsapp',
-        url: './src/assets/whatsapp.svg',
+        url: whatsapp,
     },
 ];
 
