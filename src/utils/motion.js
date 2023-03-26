@@ -87,7 +87,7 @@ export const staggerContainer = (staggerChildren, delayChildren) => {
     };
 };
 
-export const footerVariants = {
+export const slideVertical = {
     hidden: {
         opacity: 0,
         y: 50,

@@ -4,12 +4,12 @@ import { styles } from '../styles';
 import { github } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
-import { fadeIn, textVariant, footerVariants } from '../utils/motion';
+import { slideVertical } from '../utils/motion';
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return (
     <motion.div
-      variants={footerVariants}
+      variants={slideVertical}
       initial="hidden"
       whileInView="show"
       className="mt-4"
@@ -51,23 +51,26 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>
-          Meu trabalho
-        </p>
-        <h2 className={styles.sectionHeadText}>
-          Projetos
-        </h2>
+      <motion.div
+        variants={slideVertical}
+        initial="hidden"
+        whileInView="show"
+        className="mb-12"
+      >
+        <p className={styles.sectionSubText}>Meu trabalho</p>
+        <h2 className={styles.sectionHeadText}>Projetos</h2>
       </motion.div>
 
       <div className="w-full flex">
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          variants={slideVertical}
+          initial="hidden"
+          whileInView="show"
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Os projetos a seguir mostram minhas habilidades e experiência por meio de exemplos do mundo real do meu trabalho.
-          Cada projeto é brevemente descrito com links para repositórios de código e demonstrações ao vivo.
-          Isso reflete minha capacidade de resolver problemas complexos, trabalhar com diferentes tecnologias e gerenciar projetos de forma eficaz.
+          Os projetos a seguir mostram minhas <b>habilidades e experiência</b> por meio de exemplos do <b>mundo real</b> do meu trabalho e de <b>eventos</b> que participei.
+          Cada projeto é brevemente descrito com links para <b>repositórios de código</b> e alguns com <b>demonstrações ao vivo</b> através de deploy.
+          Portanto, reflete minha <b>capacidade</b> de resolver <b>problemas complexos,</b> trabalhar com <b>diferentes tecnologias</b> e <b>gerenciar projetos</b> de forma eficaz.
         </motion.p>
       </div>
 
