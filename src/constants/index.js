@@ -349,15 +349,15 @@ const projects = [
 const socials = [
     {
         name: 'linkedin',
-        url: '/src/assets/linkedin.svg',
+        url: '../src/assets/linkedin.svg',
     },
     {
         name: 'instagram',
-        url: '/src/assets/instagram.svg',
+        url: '../src/assets/instagram.svg',
     },
     {
         name: 'whatsapp',
-        url: '/src/assets/whatsapp.svg',
+        url: './src/assets/whatsapp.svg',
     },
 ];
 
