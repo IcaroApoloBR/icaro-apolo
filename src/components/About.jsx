@@ -28,7 +28,7 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Sobre mim</h2>
       </motion.div>
 
-      <div className="xl:mt-12 xl:flex-row flex flex-col-reverse mt-4 items-start gap-10 overflow-hidden">
+      <div className="xl:mt-12 xl:flex-row flex flex-col-reverse mt-4 items-start mobile:items-center gap-10 overflow-hidden">
         <motion.div>
 
           <motion.p variants={fadeIn("", "", 0.1, 1)} className=" text-secondary text-[17px] max-w-3xl leading-[30px]">
@@ -43,10 +43,12 @@ const About = () => {
             Concluí minha graduação de <b>Engenheiro da Computação</b> em 2021 pelo <b>Centro Universitário Salesiano de São Paulo,</b> período fundamental para minha carreira por proporcionar diversas experiências marcantes em <b>eventos sociais.</b>
           </motion.p>
 
-          <a href="../src/constants/cvIcaroApolo.pdf" target="_blank" className="mt-4 flex items-center gap-2 green-pink-gradient py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl cursor-pointer hover:opacity-90">
-            <Icon icon="material-symbols:sim-card-download-outline" width="32" />
-            Download CV
-          </a>
+          <div className="flex mobile:justify-center mt-4">
+            <a href="../src/constants/cvIcaroApolo.pdf" target="_blank" className="mt-4 flex items-center gap-2 green-pink-gradient py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl cursor-pointer hover:opacity-90">
+              <Icon icon="material-symbols:sim-card-download-outline" width="32" />
+              Download CV
+            </a>
+          </div>
         </motion.div>
 
         <motion.div variants={slideIn('right', "tween", 0.2, 1)} className="xl:flex-1 xl:h-auto h-[350px]">
