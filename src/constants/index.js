@@ -229,7 +229,7 @@ const projects = [
     {
         name: "Waiter App",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "Aplicação voltada a garçons, permitindo lançar, fechar pedidos e alteração nos status conforme o andamento do pedido, acompanhamento em tempo real através do dashboard de administrador.",
         tags: [
             {
                 name: "typescript",
