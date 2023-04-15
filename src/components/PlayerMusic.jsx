@@ -17,7 +17,7 @@ function PlayerMusic() {
     return (
         <div>
             <audio ref={audioRef} src="/worthNothing.mp3" />
-            <button onClick={togglePlayingMusic}>
+            <button onClick={togglePlayingMusic} className="fixed bottom-5 z-50 cursor-pointer p-4 hover:animate-pulse">
                 {isPlaying ?
                     <Icon icon="svg-spinners:bars-scale-middle" width="32" />
                     :
