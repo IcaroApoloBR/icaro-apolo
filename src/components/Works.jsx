@@ -5,8 +5,10 @@ import { github } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { slideVertical } from '../utils/motion';
+import { useState } from 'react';
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+
   return (
     <motion.div
       variants={slideVertical}
@@ -49,6 +51,14 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 }
 
 const Works = () => {
+  const [numberProjectsVisible, setNumberProjectsVisible] = useState(3);
+
+  function handleSeeMoreProjects() {
+    setNumberProjectsVisible(numberProjectsVisible + 3);
+  }
+
+  const showProjects = projects.slice(0, numberProjectsVisible);
+
   return (
     <>
       <motion.div
@@ -75,13 +85,17 @@ const Works = () => {
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
+        {showProjects.map((project, index) => (
           <ProjectCard
             key={`project-${index}`}
             index={index}
             {...project}
           />
         ))}
+        {numberProjectsVisible < projects.length && (
+          <button onClick={handleSeeMoreProjects} className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl relative hover:opacity-80">Exibir Mais</button>
+        )}
+
       </div>
     </>
   )
