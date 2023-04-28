@@ -33,7 +33,7 @@ const Contact = () => {
       'template_y9vb19d',
       {
         from_name: form.name,
-        to_name: 'Icaro Apolo',
+        to_name: 'Ícaro Apolo',
         from_email: form.email,
         to_email: 'apoloraci@gmail.com',
         message: form.message,
@@ -44,7 +44,7 @@ const Contact = () => {
         setLoading(false);
         Report.success(
           'Mensagem enviada com sucesso!',
-          'Obrigado pelo seu contato, em breve retornarei ao seu chamado.',
+          'Obrigado pelo seu contato, em breve retorno ao seu chamado.',
           'OK',
         );
         setForm({
