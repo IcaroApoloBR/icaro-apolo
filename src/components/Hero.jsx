@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
-import { useEffect, useRef } from 'react';
-
-import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
+import { useEffect, useRef } from 'react';
+import { styles } from '../styles';
 import Typed from 'typed.js'
 
 const Hero = () => {

@@ -3,9 +3,11 @@ import Tilt from 'react-tilt';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { services } from '../constants';
-import { fadeIn, textVariant, slideIn, slideVertical } from '../utils/motion';
+import { fadeIn, textVariant, slideVertical } from '../utils/motion';
 import { SectionWrapper } from '../hoc'
 import { Icon } from '@iconify/react';
+import { useEffect, useRef } from 'react';
+import Typed from 'typed.js'
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -21,6 +23,24 @@ const ServiceCard = ({ index, title, icon }) => {
 }
 
 const About = () => {
+  const el = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["Ícaro Apolo", "Desenvolvedor Web", "Front-End"],
+      startDelay: 300,
+      typeSpeed: 150,
+      backDelay: 150,
+      backSpeed: 150,
+      smartBackspace: true,
+      showCursor: false,
+      loop: true,
+    })
+    return () => {
+      typed.destroy();
+    }
+  }, []);
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -30,8 +50,12 @@ const About = () => {
 
       <div className="xl:mt-12 xl:flex-row flex flex-col-reverse mt-4 items-start mobile:items-center gap-10 overflow-hidden">
         <motion.div>
+          <h1 className={`${styles.heroHeadText} text-white`}>Prazer, sou <span className="green-pink-text-gradient" ref={el}></span></h1>
 
           <motion.p variants={textVariant()} className=" text-secondary text-[17px] max-w-3xl leading-[30px]">
+            Meu nome é <b>Ícaro Apolo,</b> sou <b>Engenheiro de Software</b> e atualmente trabalho com <b>desenvolvimento Web.</b>
+            <br />
+            Crio <b>soluções digitais personalizáveis</b> para atender <b>necessidades de clientes,</b> sejam elas, <b>sistemas complexos, interfaces de usuários</b> e <b>sites</b> no geral.
             Atualmente atuo como <b>desenvolvedor Front-End</b> para uma empresa de tecnologia, sou responsável pela <b>criação de websites e sistemas</b>, trabalho com <b>desenvolvimento de interfaces</b> com a biblioteca <b>React/Next.js</b>, construção de <b>aplicativos com React Native</b>, consumo de dados via API para <b>integrar aplicações</b> e possuo contato direto com clientes em reviews por adotarmos a <b>metodologia Scrum.</b>
             Também possuo conhecimentos em <b>HTML, CSS, SASS, Styled Components, Bootstrap, Tailwind, Vite.js, Express, Laravel, MySQL, Firebase, Git e GitHub.</b>
             <span className="flex items-center gap-2 w-full flex-wrap mt-1 mobile:justify-center"><Icon icon="logos:html-5" width="32" height="32" /><Icon icon="logos:css-3" width="32" height="32" /><Icon icon="logos:javascript" width="32" height="32" /><Icon icon="logos:react" width="32" height="32" /><Icon icon="logos:nextjs-icon" width="32" height="32" /><Icon icon="logos:vitejs" width="32" height="32" /><Icon icon="logos:tailwindcss-icon" width="32" height="32" /><Icon icon="logos:sass" width="32" height="32" /><Icon icon="logos:bootstrap" width="32" height="32" /><Icon icon="logos:laravel" width="32" height="32" /><Icon icon="logos:mysql" width="32" height="32" /><Icon icon="logos:firebase" width="32" height="32" /><Icon icon="logos:git-icon" width="32" height="32" /><Icon icon="logos:github-icon" width="32" height="32" /></span>
@@ -55,7 +79,7 @@ const About = () => {
         <motion.div variants={slideVertical} initial="hidden" whileInView="show" className="xl:flex-1 xl:h-auto h-[320px]">
           <img src="https://avatars.githubusercontent.com/u/42072562?v=4" alt="Personal Photo" className="max-w-xs rounded-full p-1 shadow-md shadow-[#2f80ed] green-pink-gradient" />
         </motion.div>
-      </div>
+      </div >
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
