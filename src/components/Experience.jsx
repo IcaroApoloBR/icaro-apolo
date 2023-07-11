@@ -35,7 +35,7 @@ const ExperienceCard = ({ experience }) => (
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} className="flex flex-col lg:items-start items-center">
         <p className={styles.sectionSubText}>
           Carreira
         </p>

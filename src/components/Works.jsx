@@ -65,13 +65,13 @@ const Works = () => {
         variants={slideVertical}
         initial="hidden"
         whileInView="show"
-        className="mb-12"
+        className="mb-12 flex flex-col lg:items-start items-center"
       >
         <p className={styles.sectionSubText}>Meu trabalho</p>
         <h2 className={styles.sectionHeadText}>Projetos</h2>
       </motion.div>
 
-      <div className="w-full flex">
+      <div className="w-full flex lg:justify-start justify-center">
         <motion.p
           variants={slideVertical}
           initial="hidden"
@@ -84,7 +84,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex flex-wrap gap-7 lg:justify-start justify-center">
         {showProjects.map((project, index) => (
           <ProjectCard
             key={`project-${index}`}

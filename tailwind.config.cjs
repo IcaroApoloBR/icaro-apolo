@@ -16,7 +16,7 @@ module.exports = {
         card: "0px 35px 120px -15px #211e35",
       },
       screens: {
-        'mobile': { 'max': '425px' },
+        'mobile': { 'max': '640px' },
         xs: "450px",
       },
       backgroundImage: {

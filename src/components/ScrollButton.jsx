@@ -23,7 +23,7 @@ const ScrollButton = () => {
         <div>
             {showButton && (
                 <button className="fixed bottom-5 right-7 z-50 cursor-pointer p-4 hover:animate-bounce" onClick={handleScrollToTop}>
-                    <Icon icon="mdi:arrow-up-bold-circle" color="#bf61ff" width="40" height="40" />
+                    <Icon className="border border-[#bf61ff] rounded-full" icon="mdi:arrow-up-bold-circle" color="#bf61ff" width="40" height="40" />
                 </button>
             )}
         </div>
