@@ -145,7 +145,7 @@ const experiences = [
             "Desenvolvimento de um ERP integrado ao Mercado Livre para vendedores gerenciarem suas métricas de lucratividade e controle de estoque, além de implementação de gateway de pagamento por assinatura",
             "Desenvolvimento e manutenção de um sistema pedagógico para franquias, responsável por realizar o controle de aulas para instituição de aulas particulares.",
             "Desenvolvimento de sistema administrativo que faz a conexão entre clientes e prestadores de serviços em geral, de variados segmentos e especialidades.",
-            "Construção de um sistema para controle de gerenciamento de estoque e realização de vendas no âmbito de Hortifruti, com exportação de recibos e variedade de gráficos para melhor visualização de dados e análise comparativa.",
+            "Construção de um sistema para controle de gerenciamento de estoque e realização de vendas para Hortifruti, com exportação de recibos e variedade de gráficos para melhor visualização de dados e análise comparativa.",
             "Construção de um e-commerce com Woocommerce no ramo de agronegócios para soluções de melhores cultivos.",
             "Manutenção de aplicativo E-reader para distribuição de licenças digitais e leitura personalizável, utilizando Google Firebase como armazenamento e consultas dos dados e e-books.",
             "Calls de alinhamento com clientes para apresentar demandas desenvolvidas e alinhar próximos passos da sprint e do backlog, utilizando metodologias ágeis Scrum e Kanban."
