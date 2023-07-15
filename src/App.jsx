@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom"
 
 import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from './components';
-import ScrollButton from "./components/ScrollButton";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 import PlayerMusic from "./components/PlayerMusic";
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
-          <ScrollButton />
+          <ScrollToTopButton />
         </div>
       </div>
     </BrowserRouter>

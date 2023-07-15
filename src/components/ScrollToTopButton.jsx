@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Icon } from '@iconify/react';
+import { AnimatePresence, motion } from 'framer-motion';
 
-const ScrollButton = () => {
+const ScrollToTopButton = () => {
     const [showButton, setShowButton] = useState(false);
 
     const handleScrollToTop = () => {
@@ -20,14 +21,19 @@ const ScrollButton = () => {
     }, [])
 
     return (
-        <div>
+        <AnimatePresence>
             {showButton && (
-                <button className="fixed bottom-5 right-7 z-50 cursor-pointer p-4 hover:animate-bounce" onClick={handleScrollToTop}>
+                <motion.button
+                    initial={{ opacity: 0, right: -10 }}
+                    animate={{ opacity: 1, right: 16 }}
+                    exit={{ opacity: 0, right: -10 }}
+                    className="fixed bottom-5 right-7 z-50 cursor-pointer p-4 hover:animate-bounce" onClick={handleScrollToTop}
+                >
                     <Icon className="border border-[#bf61ff] rounded-full" icon="mdi:arrow-up-bold-circle" color="#bf61ff" width="40" height="40" />
-                </button>
+                </motion.button>
             )}
-        </div>
+        </AnimatePresence>
     )
 }
 
-export default ScrollButton
+export default ScrollToTopButton
