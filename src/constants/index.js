@@ -142,13 +142,13 @@ const experiences = [
         date: "Março de 2022 - o momento",
         points: [
             "Desenvolvimento de interfaces de usuário com o Framework Next.js(React | TypeScript).",
-            "Desenvolvimento de um ERP integrado ao Mercado Livre para vendedores gerenciarem suas métricas de lucratividade e controle de estoque, além de implementação de gateway de pagamento por assinatura",
+            "Desenvolvimento de um ERP integrado ao Mercado Livre para vendedores gerenciarem suas métricas de lucratividade e controle de estoque, além de implementação de gateway de pagamento por assinatura.",
             "Desenvolvimento e manutenção de um sistema pedagógico para franquias, responsável por realizar o controle de aulas para instituição de aulas particulares.",
-            "Desenvolvimento de sistema administrativo que faz a conexão entre clientes e prestadores de serviços em geral, de variados segmentos e especialidades.",
+            "Criação de uma plataforma administrativa, que promove a ligação eficiente entre clientes e uma ampla gama de prestadores de serviços, abrangendo diversos setores e especializações, e incorporando um sistema de marketing multinível.",
             "Construção de um sistema para controle de gerenciamento de estoque e realização de vendas para Hortifruti, com exportação de recibos e variedade de gráficos para melhor visualização de dados e análise comparativa.",
             "Construção de um e-commerce com Woocommerce no ramo de agronegócios para soluções de melhores cultivos.",
             "Manutenção de aplicativo E-reader para distribuição de licenças digitais e leitura personalizável, utilizando Google Firebase como armazenamento e consultas dos dados e e-books.",
-            "Calls de alinhamento com clientes para apresentar demandas desenvolvidas e alinhar próximos passos da sprint e do backlog, utilizando metodologias ágeis Scrum e Kanban."
+            "Chamadas de alinhamento com clientes a fim de apresentar as demandas em desenvolvimento e coordenar os próximos passos da sprint e do backlog. Atividade conduzida de acordo com as metodologias ágeis Scrum e Kanban."
         ],
     },
 ];
