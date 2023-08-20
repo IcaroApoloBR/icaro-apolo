@@ -70,7 +70,7 @@ const About = () => {
           </motion.p>
 
           <div className="flex lg:justify-start justify-center mt-4">
-            <a href="/icaroApoloCv2023.pdf" target="_blank" className="mt-4 flex items-center gap-2 green-pink-gradient py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl cursor-pointer hover:opacity-90">
+            <a href="/icaroApoloFrontEndCV.pdf" target="_blank" className="mt-4 flex items-center gap-2 green-pink-gradient py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl cursor-pointer hover:opacity-90">
               <Icon icon="material-symbols:sim-card-download-outline" width="32" />
               Download CV
             </a>
