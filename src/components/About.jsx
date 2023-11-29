@@ -27,7 +27,7 @@ const About = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Ícaro Apolo", "Desenvolvedor Web", "Front-End"],
+      strings: ["Ícaro Apolo", "Desenvolvedor Web / Mobile", "Front-End", "Engenheiro de Software"],
       startDelay: 300,
       typeSpeed: 150,
       backDelay: 150,
@@ -53,20 +53,19 @@ const About = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>Prazer, sou <span className="green-pink-text-gradient" ref={el}></span></h1>
 
           <motion.p variants={textVariant()} className=" text-secondary text-[17px] max-w-3xl leading-[30px]">
-            <span className="sm:hidden">
-              Meu nome é <b>Ícaro Apolo,</b> sou <b>Engenheiro de Software</b> e atualmente trabalho com <b>desenvolvimento Web.  </b>
-              Crio <b>soluções digitais personalizáveis</b> para atender <b>necessidades de clientes,</b> sejam elas, <b>sistemas complexos, interfaces de usuários</b> e <b>sites</b> no geral.
-              <br />
-              <br />
-              Atualmente atuo como <b>desenvolvedor Front-End</b>, sou responsável pela <b>criação de websites e sistemas</b>, trabalho com <b>desenvolvimento de interfaces</b> com a biblioteca <b>React/Next.js</b>, construção de <b>aplicativos com React Native</b>, consumo de dados via API para <b>integrar aplicações</b> e possuo contato direto com clientes em reviews por adotarmos a <b>metodologia Scrum.</b>
-            </span>
-            <span className="flex items-center gap-2 w-full flex-wrap mt-1 lg:justify-start justify-center"><Icon icon="logos:html-5" width="32" height="32" /><Icon icon="logos:css-3" width="32" height="32" /><Icon icon="logos:javascript" width="32" height="32" /><Icon icon="devicon:typescript" width="32" height="32" /><Icon icon="logos:react" width="32" height="32" /><Icon icon="logos:nextjs-icon" width="32" height="32" /><Icon icon="logos:vitejs" width="32" height="32" /><Icon icon="logos:tailwindcss-icon" width="32" height="32" /><Icon icon="skill-icons:styledcomponents" width="32" height="32" /><Icon icon="logos:sass" width="32" height="32" /><Icon icon="logos:bootstrap" width="32" height="32" /><Icon icon="logos:laravel" width="32" height="32" /><Icon icon="devicon:nodejs" width="32" height="32" /><Icon icon="logos:mysql" width="32" height="32" /><Icon icon="logos:firebase" width="32" height="32" /><Icon icon="logos:git-icon" width="32" height="32" /><Icon icon="logos:github-icon" width="32" height="32" /></span>
-            {/* <br /> */}
+            Apaixonado por <b>desenvolvimento web/mobile</b> e criação de soluções digitais personalizáveis. Minha carreira é centrada na entrega de <b>sistemas complexos</b>, interfaces de usuário envolventes, websites de alto desempenho e aplicativos funcionais, sempre com o objetivo de atender às necessidades dos clientes.
+            <br />
+            <br />
+            Liderança em projetos de desenvolvimento de websites e sistemas. Minha expertise reside na construção de <b>interfaces excepcionais</b>, utilizando tecnologias de ponta como <b>React e Next.js</b>. Além disso, estou envolvido na criação de aplicativos móveis com <b>React-Native</b> e faço a integração de dados via APIs para oferecer soluções completas.
+            <br />
+            <br />
+            <span className="flex items-center gap-2 w-full flex-wrap mt-2 justify-center"><Icon icon="logos:html-5" width="32" height="32" /><Icon icon="logos:css-3" width="32" height="32" /><Icon icon="logos:javascript" width="32" height="32" /><Icon icon="devicon:typescript" width="32" height="32" /><Icon icon="logos:react" width="32" height="32" /><Icon icon="logos:nextjs-icon" width="32" height="32" /><Icon icon="logos:zod" width="32" height="32" /><Icon icon="logos:jest" width="32" height="32" /><Icon icon="devicon:redux" width="32" height="32" /><Icon icon="logos:vitejs" width="32" height="32" /><Icon icon="logos:tailwindcss-icon" width="32" height="32" /><Icon icon="skill-icons:styledcomponents" width="32" height="32" /><Icon icon="logos:sass" width="32" height="32" /><Icon icon="logos:bootstrap" width="32" height="32" /><Icon icon="logos:aws" width="32" height="32" /><Icon icon="logos:laravel" width="32" height="32" /><Icon icon="devicon:nodejs" width="32" height="32" /><Icon icon="logos:mysql" width="32" height="32" /><Icon icon="logos:firebase" width="32" height="32" /><Icon icon="logos:git-icon" width="32" height="32" /><Icon icon="logos:github-icon" width="32" height="32" /><Icon icon="logos:insomnia" width="32" height="32" /><Icon icon="devicon:postman" width="32" height="32" /></span>
+            <br />
+            O meu envolvimento direto com os clientes e a adoção da metodologia <b>Scrum e Kanban</b> garantem que os projetos sejam entregues com eficiência e alinhados às expectativas.
+            Tenho um profundo interesse em práticas de desenvolvimento modernas, incluindo a implementação de <b>Clean Code, Clean Architecture, SOLID</b> e a execução de <b>testes</b> abrangentes para garantir a <b>qualidade e manutenção do código</b>.
+            <br />
             <br />
             Durante a universidade, participei de diversas <b>maratonas de programação</b> e nelas me identifiquei, conheci a grandeza dessa área quando pude participar do evento <b>Bluehack 2018 e IBM Cloud Discovery</b>, voltado ao desenvolvimento de soluções tecnológicas para os <b>desafios ONU/ASBRAD, Fleury e Copersucar.</b>
-            <br />
-            <br />
-            Concluí minha graduação de <b>Engenheiro da Computação</b> em 2021 pelo <b>Centro Universitário Salesiano de São Paulo,</b> período fundamental para minha carreira por proporcionar diversas experiências marcantes em <b>eventos sociais.</b> Desde então, atuo na área de desenvolvimento de sistemas e busco me aprimorar cada vez mais.
           </motion.p>
 
           <div className="flex lg:justify-start justify-center mt-4">

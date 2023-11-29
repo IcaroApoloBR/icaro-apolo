@@ -27,6 +27,7 @@ import letmeask from "../assets/projects/letmeask.png";
 import proffy from "../assets/projects/proffy.png";
 import podcastrnext from "../assets/projects/podcastrnext.png";
 import ignitelab from "../assets/projects/ignitelab.png";
+import ignitegym from "../assets/projects/ignitegym.png";
 import apoloflix from "../assets/projects/apoloflix.png";
 import discord from "../assets/projects/discord.png";
 
@@ -155,6 +156,27 @@ const experiences = [
 
 const projects = [
     {
+        name: "Ignite Gym React-Native",
+        description:
+            "Aplicativo voltado para o universo fitness que oferece recursos de registro de usuários, rastreamento de exercícios e histórico de execução.",
+        tags: [
+            {
+                name: "react-native",
+                color: "green-pink-text-gradient",
+            },
+            {
+                name: "typescript",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "mobile",
+                color: "orange-text-gradient",
+            },
+        ],
+        image: ignitegym,
+        source_code_link: "https://github.com/IcaroApoloBR/igniteGym-mobile",
+    },
+    {
         name: "Ignite Lab React",
         description:
             "O projeto consiste em um clone da plataforma de eventos da Rocketseat, integração com CMS e APIs GraphQL.",
@@ -174,6 +196,27 @@ const projects = [
         ],
         image: ignitelab,
         source_code_link: "https://github.com/IcaroApoloBR/igniteLabReact",
+    },
+    {
+        name: "React Prime",
+        description:
+            "Um aplicativo onde você pode pesquisar filmes que estão em exibição, em alta ou com melhor classificação, descrição do filme, link do filme para assistir ao trailer e salvá-los em seus favoritos.",
+        tags: [
+            {
+                name: "react-native",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "expo",
+                color: "green-text-gradient",
+            },
+            {
+                name: "axios",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: reactprime,
+        source_code_link: "https://github.com/IcaroApoloBR/MoviesApp_ReactNative",
     },
     {
         name: "Rocket Help",
@@ -237,27 +280,6 @@ const projects = [
         ],
         image: waiterapp,
         source_code_link: "https://github.com/IcaroApoloBR/WaiterApp_FullStack",
-    },
-    {
-        name: "React Prime",
-        description:
-            "Um aplicativo onde você pode pesquisar filmes que estão em exibição, em alta ou com melhor classificação, descrição do filme, link do filme para assistir ao trailer e salvá-los em seus favoritos.",
-        tags: [
-            {
-                name: "react-native",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "expo",
-                color: "green-text-gradient",
-            },
-            {
-                name: "axios",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: reactprime,
-        source_code_link: "https://github.com/IcaroApoloBR/MoviesApp_ReactNative",
     },
     {
         name: "Proffy",
