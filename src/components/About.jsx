@@ -48,7 +48,7 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Sobre mim</h2>
       </motion.div>
 
-      <div className="xl:mt-12 xl:flex-row flex flex-col-reverse mt-4 lg:items-start items-center gap-10 overflow-hidden">
+      <div className="xl:flex-row flex flex-col-reverse mt-4 lg:items-start items-center gap-10 overflow-hidden">
         <motion.div>
           <h1 className={`${styles.heroHeadText} text-white`}>Prazer, sou <span className="green-pink-text-gradient" ref={el}></span></h1>
 
@@ -77,7 +77,7 @@ const About = () => {
         </motion.div>
 
         {/* <motion.div variants={slideIn('left', "tween", 0.2, 1)} className="xl:flex-1 xl:h-auto h-[320px]"> */}
-        <motion.div variants={slideVertical} initial="hidden" whileInView="show" className="xl:flex-1 xl:h-auto h-[320px]">
+        <motion.div variants={slideVertical} initial="hidden" whileInView="show" className="xl:flex-1 xl:h-auto h-72">
           <img src="https://avatars.githubusercontent.com/u/42072562?v=4" alt="Personal Photo" className="max-w-xs rounded-full p-1 shadow-md shadow-[#2f80ed] green-pink-gradient" />
         </motion.div>
       </div >
