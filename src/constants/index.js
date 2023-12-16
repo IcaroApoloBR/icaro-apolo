@@ -140,7 +140,7 @@ const experiences = [
         company_name: "Next Tecnologia da Informação",
         icon: next,
         iconBg: "#E6DEDD",
-        date: "Março de 2022 - o momento",
+        date: "Março de 2022 - Dezembro de 2023",
         points: [
             "Desenvolvimento de interfaces de usuário com o Framework Next.js(React | TypeScript).",
             "Desenvolvimento de um ERP integrado ao Mercado Livre para vendedores gerenciarem suas métricas de lucratividade e controle de estoque, além de implementação de gateway de pagamento por assinatura.",

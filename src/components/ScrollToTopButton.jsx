@@ -29,7 +29,7 @@ const ScrollToTopButton = () => {
                     exit={{ opacity: 0, right: -10 }}
                     className="fixed bottom-5 right-7 z-50 cursor-pointer p-4 hover:animate-bounce" onClick={handleScrollToTop}
                 >
-                    <Icon className="border border-[#bf61ff] rounded-full" icon="mdi:arrow-up-bold-circle" color="#bf61ff" width="40" height="40" />
+                    <Icon className="" icon="line-md:arrow-up-circle" color="#1D1836" width="40" height="40" />
                 </motion.button>
             )}
         </AnimatePresence>

@@ -11,7 +11,7 @@ import Typed from 'typed.js'
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt className="xs:w-[250px] w-full">
+    <Tilt className="xs:w-52 w-full">
       <motion.div variants={fadeIn("right", "spring", 0.5 * index, 0.75)} className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card">
         <div options={{ max: 45, scale: 1, speed: 450 }} className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex flex-col justify-evenly items-center">
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
@@ -52,7 +52,7 @@ const About = () => {
         <motion.div>
           <h1 className={`${styles.heroHeadText} text-white`}>Prazer, sou <span className="green-pink-text-gradient" ref={el}></span></h1>
 
-          <motion.p variants={textVariant()} className=" text-secondary text-[17px] max-w-3xl leading-[30px]">
+          <motion.div variants={slideVertical} initial="hidden" whileInView="show" className=" text-secondary text-[17px] max-w-3xl leading-[30px]">
             Apaixonado por <b>desenvolvimento web/mobile</b> e criação de soluções digitais personalizáveis. Minha carreira é centrada na entrega de <b>sistemas complexos</b>, interfaces de usuário envolventes, websites de alto desempenho e aplicativos funcionais, sempre com o objetivo de atender às necessidades dos clientes.
             <br />
             <br />
@@ -66,7 +66,7 @@ const About = () => {
             <br />
             <br />
             Durante a universidade, participei de diversas <b>maratonas de programação</b> e nelas me identifiquei, conheci a grandeza dessa área quando pude participar do evento <b>Bluehack 2018 e IBM Cloud Discovery</b>, voltado ao desenvolvimento de soluções tecnológicas para os <b>desafios ONU/ASBRAD, Fleury e Copersucar.</b>
-          </motion.p>
+          </motion.div>
 
           <div className="flex lg:justify-start justify-center mt-4">
             <a href="/icaroApoloFrontEndCV.pdf" target="_blank" className="mt-4 flex items-center gap-2 green-pink-gradient py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl cursor-pointer hover:opacity-90">
@@ -82,7 +82,7 @@ const About = () => {
         </motion.div>
       </div >
 
-      <div className="mt-20 flex flex-wrap gap-4 justify-center lg:justify-start">
+      <div className="mt-20 flex flex-wrap gap-7 justify-center lg:justify-start">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
