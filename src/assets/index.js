@@ -23,6 +23,8 @@ import threejs from "./tech/threejs.svg";
 
 import next from "./company/next.png";
 import prefeitura from "./company/prefeitura.png";
+import bean from "./company/bean.png";
+import tbb from "./company/tbb.png";
 
 import linkedin from "./socials/linkedin.svg";
 import instagram from "./socials/instagram.svg";
@@ -54,6 +56,9 @@ export {
 
   next,
   prefeitura,
+  bean,
+  tbb,
+  
   linkedin,
   instagram,
   whatsapp

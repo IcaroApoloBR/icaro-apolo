@@ -18,6 +18,8 @@ import {
     threejs,
     next,
     prefeitura,
+    bean,
+    tbb
 } from "../assets";
 
 import rockethelp from "../assets/projects/rockethelp.jpg";
@@ -30,6 +32,10 @@ import ignitelab from "../assets/projects/ignitelab.png";
 import ignitegym from "../assets/projects/ignitegym.png";
 import apoloflix from "../assets/projects/apoloflix.png";
 import discord from "../assets/projects/discord.png";
+
+import crud from "../assets/projects/crud.jpeg";
+import pokedex from "../assets/projects/pokedex.gif";
+import ecommerce from "../assets/projects/ecommerce.gif";
 
 import linkedin from "../assets/socials/linkedin.svg";
 import instagram from "../assets/socials/instagram.svg";
@@ -142,19 +148,107 @@ const experiences = [
         iconBg: "#E6DEDD",
         date: "Março de 2022 - Dezembro de 2023",
         points: [
-            "Desenvolvimento de interfaces de usuário com o Framework Next.js(React | TypeScript).",
             "Desenvolvimento de um ERP integrado ao Mercado Livre para vendedores gerenciarem suas métricas de lucratividade e controle de estoque, além de implementação de gateway de pagamento por assinatura.",
             "Desenvolvimento e manutenção de um sistema pedagógico para franquias, responsável por realizar o controle de aulas para instituição de aulas particulares.",
             "Criação de uma plataforma administrativa, que promove a ligação eficiente entre clientes e uma ampla gama de prestadores de serviços, abrangendo diversos setores e especializações, e incorporando um sistema de marketing multinível.",
             "Construção de um sistema para controle de gerenciamento de estoque e realização de vendas para Hortifruti, com exportação de recibos e variedade de gráficos para melhor visualização de dados e análise comparativa.",
             "Construção de um e-commerce com Woocommerce no ramo de agronegócios para soluções de melhores cultivos.",
             "Manutenção de aplicativo E-reader para distribuição de licenças digitais e leitura personalizável, utilizando Google Firebase como armazenamento e consultas dos dados e e-books.",
-            "Chamadas de alinhamento com clientes a fim de apresentar as demandas em desenvolvimento e coordenar os próximos passos da sprint e do backlog. Atividade conduzida de acordo com as metodologias ágeis Scrum e Kanban."
+        ],
+    },
+    {
+        title: "Desenvolvedor Pleno",
+        company_name: "Bean Softwares",
+        icon: bean,
+        iconBg: "#FFFFFF",
+        date: "Dezembro de 2023 - Março de 2024",
+        points: [
+            "Desenvolvimento de sistema de Logística Reversa para empresa Grendene (detentora das marcas Melissa, Rider, Ipanema, Grendha, Zaxy, Cartago, Pega Forte e Grendene Kids,), utilizando Framework Next.js 14 (React | TypeScript), TailwindCSS e Hasura GraphQL API.",
+            "Objetivo de fazer descarte de um produto não utilizado mais, assim, o material será enviado para recicladores parceiros e poderá virar um novo item. Portanto, contribuirá a prolongar o ciclo de vida dos materiais e reduz o impacto para o planeta.",            "Desenvolvimento de um ecossistema envolvendo consumidores, lojistas, administradores e recicladores para controle de materiais reciclados.",
+            "Funcionalidades incluem autenticação via Magic Link, níveis de permissões por usuários baseado em middleware, cadastro e agendamento de devolução, acompanhar status em tempo real da coleta, relatórios de status final com avaliações e dashboard administrativa com gráficos informativos de produtos reciclados e coletas concluídas por pontos de coleta.",
+            "Desenvolvimento de um programa integrado para previsão de vendas, consolidar dados e quantidades realizadas a partir de pedidos no banco de dados do FoccoERP.",
+            "Facilitou o gerenciamento em tempo real, eliminando atualizações manuais e permitindo análises imediatas na mesma tela, assim, transformando o processo manual de análise que anteriormente era realizado em planilhas eletrônicas."
+        ],
+    },
+    {
+        title: "Desenvolvedor Pleno",
+        company_name: "The Brooklyn Brothers",
+        icon: tbb,
+        iconBg: "#000000",
+        date: "Março de 2024 - Até o momento",
+        points: [
+            "Desenvolver novos websites da Unilever na plataforma Adobe Experience Manager SaaS (AEM).",
+            "Integrante do Squad de Inovação, responsável por desenvolver sites com foco em fluidez, atratividade, performance e acessibilidade, atendendo otimização no geral do produto.",
+            "Levantamento de requisitos para construção de componentes.",
+            "Prestar suporte aos clientes internacionais, compreendendo às expectativas e fornecendo suporte durante todo o processo de desenvolvimento do software."
         ],
     },
 ];
 
 const projects = [
+    {
+        name: "FrontEnd Test - The Brooklyn Brothers",
+        description:
+            "Desafio Técnico The Brooklyn Brothers - Front end Developer React",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "jest",
+                color: "green-text-gradient",
+            },
+            {
+                name: "sass",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: ecommerce,
+        source_code_link: "https://github.com/IcaroApoloBR/TBB-frontend-challenge",
+    },
+    {
+        name: "FrontEnd Test - Bean Softwares",
+        description:
+            "Desafio Técnico Bean Softwares - Front end Developer React",
+        tags: [
+            {
+                name: "typescript",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "docker",
+                color: "green-text-gradient",
+            },
+            {
+                name: "nextjs",
+                color: "green-pink-text-gradient",
+            },
+        ],
+        image: pokedex,
+        source_code_link: "https://github.com/IcaroApoloBR/pokedex-test-frontend",
+    },
+    {
+        name: "FrontEnd Test - Trinca",
+        description:
+            "Desafio Técnico Trinca Softwares - Front end Developer React",
+        tags: [
+            {
+                name: "typescript",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "tailwind",
+                color: "green-text-gradient",
+            },
+            {
+                name: "nextjs",
+                color: "green-pink-text-gradient",
+            },
+        ],
+        image: crud,
+        source_code_link: "https://github.com/IcaroApoloBR/trinca-frontend-test",
+    },
     {
         name: "Ignite Gym React-Native",
         description:
